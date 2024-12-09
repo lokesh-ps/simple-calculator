@@ -23,6 +23,7 @@ function App() {
   };
   return (
     <div className="App">
+      <h1>Simple Calculator</h1>
       <div className="user-input-and-calc">
         {isSubmitBtnClicked ? result : userInput}
       </div>
