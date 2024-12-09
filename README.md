@@ -1,1 +1,1 @@
-# simple-to-do-list
+# simple-calculator
