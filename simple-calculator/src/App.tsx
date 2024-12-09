@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import "./App.css";
 
 function App() {
-  const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+  const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
   const expressions = ["+", "-", "*", "/", "%"];
 
   const [userInput, setUserInput] = useState("");
   const [result, setResult] = useState(null);
   const [isSubmitBtnClicked, setIsSubmitBtnClicked] = useState(false);
-  const handleClick = (input: any) => {
-    setUserInput((prev) => prev + input.toString());
+  const handleClick = (input: string) => {
+    setUserInput((prev) => prev + input);
   };
   const handleSubmitClick = () => {
     const res = eval(userInput);
@@ -31,7 +31,7 @@ function App() {
         {numbers?.map((item, index) => {
           return (
             <button
-              key={index}
+              key={item}
               onClick={() => handleClick(item)}
               style={{ margin: "2px" }}
             >
@@ -44,7 +44,7 @@ function App() {
         {expressions?.map((item, index) => {
           return (
             <button
-              key={index}
+              key={item}
               onClick={() => handleClick(item)}
               style={{ margin: "2px" }}
             >
