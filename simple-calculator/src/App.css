@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.number-holder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 30%;
+}
+
+.expression-holder {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 30%;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+  margin-top: 10px;
+}
